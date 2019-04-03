@@ -11,6 +11,12 @@ const items = [
   'g-top',
   't-top',
   'v-top',
+  'd-bottom',
+  'a-bottom',
+  'k-bottom',
+  'g-bottom',
+  't-bottom',
+  'v-bottom',
 ];
 
 function loadItems(item, index) {
