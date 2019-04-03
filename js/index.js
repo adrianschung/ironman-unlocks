@@ -1,4 +1,17 @@
-const items = ['d-helm', 'a-hood', 'k-coif', 'g-helm', 't-helm', 'v-helm'];
+const items = [
+  'd-helm',
+  'a-hood',
+  'k-coif',
+  'g-helm',
+  't-helm',
+  'v-helm',
+  'd-top',
+  'a-top',
+  'k-top',
+  'g-top',
+  't-top',
+  'v-top',
+];
 
 function loadItems(item, index) {
   $(`#${item}`).addClass(localStorage.getItem(`${item}`));
