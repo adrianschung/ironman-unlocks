@@ -23,6 +23,18 @@ const items = [
   'g-spear',
   't-hammers',
   'v-flail',
+  'a-helm',
+  'a-cp',
+  'a-cs',
+  'a-hilt',
+  'b-cp',
+  'b-tass',
+  'b-boots',
+  'b-hilt',
+  's-sword',
+  's-light',
+  'a-cb',
+  's-hilt',
 ];
 
 function loadItems(item, index) {
