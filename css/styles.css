@@ -1,0 +1,9 @@
+.icon {
+  height: 3%;
+  width: 3%;
+  opacity: 0.2;
+}
+
+.unlocked {
+  opacity: 1 !important;
+}
