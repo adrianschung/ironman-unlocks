@@ -17,6 +17,12 @@ const items = [
   'g-bottom',
   't-bottom',
   'v-bottom',
+  'd-axe',
+  'a-staff',
+  'k-bow',
+  'g-spear',
+  't-hammers',
+  'v-flail',
 ];
 
 function loadItems(item, index) {
