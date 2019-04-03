@@ -13,8 +13,9 @@ body {
   background-size: cover;
   background-position: center;
   font-family: Runescape;
-  width: 100vw;
-  height: 100vh;
+  height: 92vh;
+  width: 92vw;
+  margin: 0;
 }
 
 caption {
