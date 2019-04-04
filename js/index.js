@@ -21,7 +21,7 @@ const items = [
   'a-staff',
   'k-bow',
   'g-spear',
-  't-hammers',
+  't-hammer',
   'v-flail',
   'a-helm',
   'a-cp',
@@ -31,10 +31,14 @@ const items = [
   'b-tass',
   'b-boots',
   'b-hilt',
-  's-sword',
+  's-sw',
   's-light',
   'a-cb',
   's-hilt',
+  'z-spear',
+  's-bs',
+  's-otd',
+  'z-hilt',
 ];
 
 function loadItems(item, index) {
