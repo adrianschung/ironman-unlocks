@@ -13,7 +13,6 @@ html {
   font-family: 'Runescape';
   background-image: url('../images/bg.jpg');
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
   margin: 0;
@@ -50,13 +49,11 @@ td {
 }
 
 .barrows {
-  width: 45%;
-  display: inline-block;
+  width: 100%;
 }
 
 .gwd {
   width: 30%;
-  display: inline-block;
 }
 
 .gwd-title {
@@ -69,11 +66,15 @@ td {
   opacity: 0.2;
 }
 
-.items-wrapper {
-  display: flex;
-  height: 40%;
-}
-
 .unlocked {
   opacity: 1 !important;
+}
+
+@media only screen and (min-width: 768px) {
+  table {
+    display: inline-block;
+  }
+  .barrows {
+    width: 45%;
+  }
 }
