@@ -11,9 +11,10 @@
 body,
 html {
   font-family: 'Runescape';
-  background-image: url('../images/bg.jpg');
+  background-image: url('../images/bg.png');
   background-position: center;
   background-size: cover;
+  color: yellow;
   height: 100%;
   margin: 0;
   text-align: center;
