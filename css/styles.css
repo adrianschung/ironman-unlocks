@@ -33,13 +33,15 @@ h1 {
 }
 
 table {
-  margin: 0 auto;
+  vertical-align: top;
+  margin-right: 30px;
+  margin-left: 30px;
   height: 100%;
+  width: 80%;
 }
 
 tbody {
   height: 100%;
-  width: 80%;
 }
 
 td {
@@ -76,6 +78,14 @@ td {
   }
 
   .barrows {
-    width: 45%;
+    width: 30%;
+  }
+
+  .gwd {
+    width: 20%;
+  }
+
+  .void {
+    width: 15%;
   }
 }

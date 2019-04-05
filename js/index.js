@@ -39,6 +39,14 @@ const items = [
   's-bs',
   's-otd',
   'z-hilt',
+  'void-top',
+  'void-robe',
+  'void-glove',
+  'void-melee',
+  'void-range',
+  'void-mage',
+  'elite-top',
+  'elite-robe',
 ];
 
 function loadItems(item, index) {
