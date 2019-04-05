@@ -39,22 +39,15 @@ table {
 
 tbody {
   height: 100%;
+  width: 80%;
 }
 
 td {
   margin: 0 auto;
   text-align: center;
-  height: 100px;
-  width: 100px;
+  height: 30px;
+  width: 30px;
   padding: 5px;
-}
-
-.barrows {
-  width: 100%;
-}
-
-.gwd {
-  width: 30%;
 }
 
 .gwd-title {
@@ -76,6 +69,12 @@ td {
   table {
     display: inline-block;
   }
+
+  td {
+    height: 80px;
+    width: 80px;
+  }
+
   .barrows {
     width: 45%;
   }
