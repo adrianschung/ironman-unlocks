@@ -1,113 +1,115 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Ironman Unlocks</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
-  <link rel="manifest" href="images/favicons/site.webmanifest">
-  <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#b91d47">
-  <meta name="theme-color" content="#ffffff">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="js/jquery-3.3.1.min.js"></script>
+  <head>
+    
+    <title>Ironman Unlocks</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#b91d47">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
 
-</head>
-<body>
+  </head>
+  <body>
+    <a href="stats.html">
+      <img class="tab" src="images/tabs/stats.png">
+    </a>
+    <img class="tab" src="images/tabs/inv_active.png">
 
-  <img class="tab" src="images/tabs/stats.png">
-  <img class="tab" src="images/tabs/inv_active.png">
+    <h1>Unlocks</h1>
 
-  <h1>Unlocks</h1>
+    <div class="items-wrapper">
 
-  <div class="items-wrapper">
-
-    <table class="void">
-      <caption>Void</caption>
-      <tr>
-        <td><img id="void-melee" src="images/Void_melee_helm.png" class="icon" title="Void Knight Melee Helm"></td>
-        <td><img id="void-top" src="images/Void_knight_top.png" class="icon" title="Void Knight Top"></td>
-        <td><img id="elite-top" src="images/Elite_void_top.png" class="icon" title="Elite Knight top"></td>
-      </tr>
-      <tr>
-        <td><img id="void-range" src="images/Void_ranger_helm.png" class="icon" title="Void Knight Ranger Helm"></td>
-        <td><img id="void-robe" src="images/Void_knight_robe.png" class="icon" title="Void Knight Robe"></td>
-        <td><img id="elite-robe" src="images/Elite_void_robe.png" class="icon" title="Elite Knight Robe"></td>
-      </tr>
-      <tr>
-        <td><img id="void-mage" src="images/Void_mage_helm.png" class="icon" title="Void Knight Mage Helm"></td>
-        <td><img id="void-glove" src="images/Void_knight_gloves.png" class="icon" title="Void Knight Gloves"></td>        
-      </tr>
+      <table class="void">
+        <caption>Void</caption>
+        <tr>
+          <td><img id="void-melee" src="images/Void_melee_helm.png" class="icon" title="Void Knight Melee Helm"></td>
+          <td><img id="void-top" src="images/Void_knight_top.png" class="icon" title="Void Knight Top"></td>
+          <td><img id="elite-top" src="images/Elite_void_top.png" class="icon" title="Elite Knight top"></td>
+        </tr>
+        <tr>
+          <td><img id="void-range" src="images/Void_ranger_helm.png" class="icon" title="Void Knight Ranger Helm"></td>
+          <td><img id="void-robe" src="images/Void_knight_robe.png" class="icon" title="Void Knight Robe"></td>
+          <td><img id="elite-robe" src="images/Elite_void_robe.png" class="icon" title="Elite Knight Robe"></td>
+        </tr>
+        <tr>
+          <td><img id="void-mage" src="images/Void_mage_helm.png" class="icon" title="Void Knight Mage Helm"></td>
+          <td><img id="void-glove" src="images/Void_knight_gloves.png" class="icon" title="Void Knight Gloves"></td>        
+        </tr>
 
 
-    <table class="barrows">
-      <caption>Barrows</caption>
-      <tr>
-        <td><img id="d-helm" src="images/Dharok's_helm.png" class="icon" title="Dharok's Helm"></td>
-        <td><img id="a-hood" src="images/Ahrim's_hood.png" class="icon" title="Ahrim's Hood"></td>
-        <td><img id="k-coif" src="images/Karil's_coif.png" class="icon" title="Karil's Coif"></td>
-        <td><img id="g-helm" src="images/Guthan's_helm.png" class="icon" title="Guthan's Helm"></td>
-        <td><img id="t-helm" src="images/Torag's_helm.png" class="icon" title="Torag's Helm"></td>
-        <td><img id="v-helm" src="images/Verac's_helm.png" class="icon" title="Verac's Helm"></td>
-      </tr>
-      <tr>
-        <td><img id="d-top" src="images/Dharok's_platebody.png" class="icon" title="Dharok's Platebody"></td>
-        <td><img id="a-top" src="images/Ahrim's_robetop.png" class="icon" title="Ahrim's Robetop"></td>
-        <td><img id="k-top" src="images/Karil's_leathertop.png" class="icon" title="Karil's Leathertop"></td>
-        <td><img id="g-top" src="images/Guthan's_platebody.png" class="icon" title="Guthan's Platebody"></td>
-        <td><img id="t-top" src="images/Torag's_platebody.png" class="icon" title="Torag's Platebody"></td>
-        <td><img id="v-top" src="images/Verac's_brassard.png" class="icon" title="Verac's Brassard"></td>
-      </tr>
-      <tr>
-        <td><img id="d-bottom" src="images/Dharok's_platelegs.png" class="icon" title="Dharok's Platelegs"></td>
-        <td><img id="a-bottom" src="images/Ahrim's_robeskirt.png" class="icon" title="Ahrim's Robeskirt"></td>
-        <td><img id="k-bottom" src="images/Karil's_leatherskirt.png" class="icon" title="Karil's Leatherskirt"></td>
-        <td><img id="g-bottom" src="images/Guthan's_chainskirt.png" class="icon" title="Guthan's Chainskirt"></td>
-        <td><img id="t-bottom" src="images/Torag's_platelegs.png" class="icon" title="Torag's Platelegs"></td>
-        <td><img id="v-bottom" src="images/Verac's_plateskirt.png" class="icon" title="Verac's Plateskirt"></td>
-      </tr>
-      <tr>
-        <td><img id="d-axe" src="images/Dharok's_greataxe.png" class="icon" title="Dharok's Greataxe"></td>
-        <td><img id="a-staff" src="images/Ahrim's_staff.png" class="icon" title="Ahrim's Staff"></td>
-        <td><img id="k-bow" src="images/Karil's_crossbow.png" class="icon" title="Karil's Crossbow"></td>
-        <td><img id="g-spear" src="images/Guthan's_warspear.png" class="icon" title="Guthan's Warspear"></td>
-        <td><img id="t-hammer" src="images/Torag's_hammers.png" class="icon" title="Torag's Hammers"></td>
-        <td><img id="v-flail" src="images/Verac's_flail.png" class="icon" title="Verac's Flail"></td>
-      </tr>
-    </table>
+      <table class="barrows">
+        <caption>Barrows</caption>
+        <tr>
+          <td><img id="d-helm" src="images/Dharok's_helm.png" class="icon" title="Dharok's Helm"></td>
+          <td><img id="a-hood" src="images/Ahrim's_hood.png" class="icon" title="Ahrim's Hood"></td>
+          <td><img id="k-coif" src="images/Karil's_coif.png" class="icon" title="Karil's Coif"></td>
+          <td><img id="g-helm" src="images/Guthan's_helm.png" class="icon" title="Guthan's Helm"></td>
+          <td><img id="t-helm" src="images/Torag's_helm.png" class="icon" title="Torag's Helm"></td>
+          <td><img id="v-helm" src="images/Verac's_helm.png" class="icon" title="Verac's Helm"></td>
+        </tr>
+        <tr>
+          <td><img id="d-top" src="images/Dharok's_platebody.png" class="icon" title="Dharok's Platebody"></td>
+          <td><img id="a-top" src="images/Ahrim's_robetop.png" class="icon" title="Ahrim's Robetop"></td>
+          <td><img id="k-top" src="images/Karil's_leathertop.png" class="icon" title="Karil's Leathertop"></td>
+          <td><img id="g-top" src="images/Guthan's_platebody.png" class="icon" title="Guthan's Platebody"></td>
+          <td><img id="t-top" src="images/Torag's_platebody.png" class="icon" title="Torag's Platebody"></td>
+          <td><img id="v-top" src="images/Verac's_brassard.png" class="icon" title="Verac's Brassard"></td>
+        </tr>
+        <tr>
+          <td><img id="d-bottom" src="images/Dharok's_platelegs.png" class="icon" title="Dharok's Platelegs"></td>
+          <td><img id="a-bottom" src="images/Ahrim's_robeskirt.png" class="icon" title="Ahrim's Robeskirt"></td>
+          <td><img id="k-bottom" src="images/Karil's_leatherskirt.png" class="icon" title="Karil's Leatherskirt"></td>
+          <td><img id="g-bottom" src="images/Guthan's_chainskirt.png" class="icon" title="Guthan's Chainskirt"></td>
+          <td><img id="t-bottom" src="images/Torag's_platelegs.png" class="icon" title="Torag's Platelegs"></td>
+          <td><img id="v-bottom" src="images/Verac's_plateskirt.png" class="icon" title="Verac's Plateskirt"></td>
+        </tr>
+        <tr>
+          <td><img id="d-axe" src="images/Dharok's_greataxe.png" class="icon" title="Dharok's Greataxe"></td>
+          <td><img id="a-staff" src="images/Ahrim's_staff.png" class="icon" title="Ahrim's Staff"></td>
+          <td><img id="k-bow" src="images/Karil's_crossbow.png" class="icon" title="Karil's Crossbow"></td>
+          <td><img id="g-spear" src="images/Guthan's_warspear.png" class="icon" title="Guthan's Warspear"></td>
+          <td><img id="t-hammer" src="images/Torag's_hammers.png" class="icon" title="Torag's Hammers"></td>
+          <td><img id="v-flail" src="images/Verac's_flail.png" class="icon" title="Verac's Flail"></td>
+        </tr>
+      </table>
 
-    <table class="gwd">
-      <caption class="gwd-title">God Wars Dungeon</caption>
-      <tr>
-        <td><img id="a-helm" src="images/Armadyl_helmet.png" class="icon" title="Armadyl Helmet"></td>
-        <td><img id="b-cp" src="images/Bandos_chestplate.png" class="icon" title="Bandos Chestplate"></td>
-        <td><img id="s-sw" src="images/Saradomin_sword.png" class="icon" title="Saradomin Sword"></td>
-        <td><img id="z-spear" src="images/Zamorakian_spear.png" class="icon" title="Zamorakian Spear"></td>
-      </tr>
-      <tr>
-        <td><img id="a-cp" src="images/Armadyl_chestplate.png" class="icon" title="Armadyl Chestplate"></td>
-        <td><img id="b-tass" src="images/Bandos_tassets.png" class="icon" title="Bandos Tassets"></td>
-        <td><img id="s-light" src="images/Saradomin's_light.png" class="icon" title="Saradomin's Light"></td>
-        <td><img id="s-bs" src="images/Steam_battlestaff.png" class="icon" title="Steam Battlestaff"></td>
-      </tr>
-      <tr>
-        <td><img id="a-cs" src="images/Armadyl_chainskirt.png" class="icon" title="Armadyl Chainskirt"></td>
-        <td><img id="b-boots" src="images/Bandos_boots.png" class="icon" title="Bandos Boots"></td>
-        <td><img id="a-cb" src="images/Armadyl_crossbow.png" class="icon" title="Armadyl Crossbow"></td>
-        <td><img id="s-otd" src="images/Staff_of_the_dead.png" class="icon" title="Staff of the Dead"></td>
-      </tr>
-      <tr>
-        <td><img id="a-hilt" src="images/Armadyl_hilt.png" class="icon" title="Armadyl Hilt"></td>
-        <td><img id="b-hilt" src="images/Bandos_hilt.png" class="icon" title="Bandos Hilt"></td>
-        <td><img id="s-hilt" src="images/Saradomin_hilt.png" class="icon" title="Saradomin Hilt"></td>
-        <td><img id="z-hilt" src="images/Zamorak_hilt.png" class="icon" title="Zamorak Hilt"></td>
-      </tr>
-    </table>
+      <table class="gwd">
+        <caption class="gwd-title">God Wars Dungeon</caption>
+        <tr>
+          <td><img id="a-helm" src="images/Armadyl_helmet.png" class="icon" title="Armadyl Helmet"></td>
+          <td><img id="b-cp" src="images/Bandos_chestplate.png" class="icon" title="Bandos Chestplate"></td>
+          <td><img id="s-sw" src="images/Saradomin_sword.png" class="icon" title="Saradomin Sword"></td>
+          <td><img id="z-spear" src="images/Zamorakian_spear.png" class="icon" title="Zamorakian Spear"></td>
+        </tr>
+        <tr>
+          <td><img id="a-cp" src="images/Armadyl_chestplate.png" class="icon" title="Armadyl Chestplate"></td>
+          <td><img id="b-tass" src="images/Bandos_tassets.png" class="icon" title="Bandos Tassets"></td>
+          <td><img id="s-light" src="images/Saradomin's_light.png" class="icon" title="Saradomin's Light"></td>
+          <td><img id="s-bs" src="images/Steam_battlestaff.png" class="icon" title="Steam Battlestaff"></td>
+        </tr>
+        <tr>
+          <td><img id="a-cs" src="images/Armadyl_chainskirt.png" class="icon" title="Armadyl Chainskirt"></td>
+          <td><img id="b-boots" src="images/Bandos_boots.png" class="icon" title="Bandos Boots"></td>
+          <td><img id="a-cb" src="images/Armadyl_crossbow.png" class="icon" title="Armadyl Crossbow"></td>
+          <td><img id="s-otd" src="images/Staff_of_the_dead.png" class="icon" title="Staff of the Dead"></td>
+        </tr>
+        <tr>
+          <td><img id="a-hilt" src="images/Armadyl_hilt.png" class="icon" title="Armadyl Hilt"></td>
+          <td><img id="b-hilt" src="images/Bandos_hilt.png" class="icon" title="Bandos Hilt"></td>
+          <td><img id="s-hilt" src="images/Saradomin_hilt.png" class="icon" title="Saradomin Hilt"></td>
+          <td><img id="z-hilt" src="images/Zamorak_hilt.png" class="icon" title="Zamorak Hilt"></td>
+        </tr>
+      </table>
 
-  </div>
+    </div>
 
-  <script src="js/index.js"></script>
+    <script src="js/index.js"></script>
 
-</body>
+  </body>
 </html>
