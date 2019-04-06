@@ -68,7 +68,7 @@ td {
 }
 
 .level {
-  margin: auto;
+  margin: auto 10% auto auto;
   font-size: 24px;
   text-align: center;
   vertical-align: middle;
@@ -76,19 +76,20 @@ td {
 
 .skill {
   width: auto;
-  height: 80%;
+  height: 70%;
   float: left;
   top: 0;
   bottom: 0;
   margin: auto;
 }
 
-.skills-wrapper {
+.skills-row {
   width: 80%;
-  height: 80%;
+  height: 10%;
   margin: auto;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .stat {
@@ -96,15 +97,30 @@ td {
   border-color: black;
   border-style: solid;
   border-radius: 8px;
-  margin: 1%;
+  margin: 0.5%;
   display: flex;
   justify-content: center;
-  width: 10%;
-  height: 10%;
+  height: 80%;
+  width: 30%;
+}
+
+.text {
+  display: block;
+}
+
+.total {
+  font-size: 18px;
+  height: 40%;
+  margin: 5% 0;
 }
 
 .unlocked {
   opacity: 1 !important;
+}
+
+.wide {
+  height: auto;
+  width: 55%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -125,6 +141,10 @@ td {
     width: 20%;
   }
 
+  .stat {
+    width: 15%;
+  }
+
   .tab {
     display: inline-block;
     height: 72px;
@@ -133,5 +153,15 @@ td {
 
   .void {
     width: 15%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .stat {
+    width: 10%;
+  }
+
+  .total {
+    font-size: 24px;
   }
 }
