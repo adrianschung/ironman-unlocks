@@ -85,6 +85,12 @@ td {
     width: 20%;
   }
 
+  .tab {
+    display: inline-block;
+    height: 72px;
+    width: auto;
+  }
+
   .void {
     width: 15%;
   }
