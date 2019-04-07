@@ -26,9 +26,10 @@
     <br />
     <br />
 
-    <form class="username">
+    <form class="username" autocomplete="off">
       Username:
-      <input type="text" name="username">
+      <input type="text" name="username" size="12">
+      <input type="submit" value="Submit">
     </form>
 
     <br />
@@ -36,122 +37,124 @@
     <div class="skills-row">
       <div class="stat">
         <img class="skill" src="images/skills/Attack_icon.png">
-        <p class="level">1</p>
+        <p id="attack" class="level">1</p>
       </div>
       <div class="stat">
         <img class="skill" src="images/skills/Hitpoints_icon.png">
-        <p class="level">1</p>
+        <p id="hitpoints" class="level">1</p>
       </div>
       <div class="stat">
         <img class="skill" src="images/skills/Mining_icon.png">
-        <p class="level">1</p>
+        <p id="mining" class="level">1</p>
       </div>
     </div>
 
     <div class="skills-row">
       <div class="stat">
         <img class="skill" src="images/skills/Strength_icon.png">
-        <p class="level">1</p>
+        <p id="strength" class="level">1</p>
       </div>
       <div class="stat">
         <img class="skill" src="images/skills/Agility_icon.png">
-        <p class="level">1</p>
+        <p id="agility" class="level">1</p>
       </div>
       <div class="stat">
         <img class="skill" src="images/skills/Smithing_icon.png">
-        <p class="level">1</p>
+        <p id="smithing" class="level">1</p>
       </div>
     </div>
 
     <div class="skills-row">
       <div class="stat">
         <img class="skill" src="images/skills/Defence_icon.png">
-        <p class="level">1</p>
+        <p id="defence" class="level">1</p>
       </div>
       <div class="stat">
         <img class="skill wide" src="images/skills/Herblore_icon.png">
-        <p class="level">1</p>
+        <p id="herblore" class="level">1</p>
       </div>
       <div class="stat">
         <img class="skill" src="images/skills/Fishing_icon.png">
-        <p class="level">1</p>
+        <p id="fishing" class="level">1</p>
       </div>
     </div>
 
     <div class="skills-row">
       <div class="stat">
         <img class="skill" src="images/skills/Ranged_icon.png">
-        <p class="level">1</p>
+        <p id="ranged" class="level">1</p>
       </div>
       <div class="stat">
         <img class="skill wide" src="images/skills/Thieving_icon.png">
-        <p class="level">1</p>
+        <p id="thieving" class="level">1</p>
       </div>
       <div class="stat">
         <img class="skill" src="images/skills/Cooking_icon.png">
-        <p class="level">1</p>
+        <p id="cooking" class="level">1</p>
       </div>
     </div>
 
     <div class="skills-row">
       <div class="stat">
         <img class="skill" src="images/skills/Prayer_icon.png">
-        <p class="level">1</p>
+        <p id="prayer" class="level">1</p>
       </div>
       <div class="stat">
         <img class="skill" src="images/skills/Crafting_icon.png">
-        <p class="level">1</p>
+        <p id="crafting" class="level">1</p>
       </div>
       <div class="stat">
         <img class="skill" src="images/skills/Firemaking_icon.png">
-        <p class="level">1</p>
+        <p id="firemaking" class="level">1</p>
       </div>
     </div>
 
     <div class="skills-row">
       <div class="stat">
         <img class="skill" src="images/skills/Magic_icon.png">
-        <p class="level">1</p>
+        <p id="magic" class="level">1</p>
       </div>
       <div class="stat">
         <img class="skill" src="images/skills/Fletching_icon.png">
-        <p class="level">1</p>
+        <p id="fletching" class="level">1</p>
       </div>
       <div class="stat">
         <img class="skill" src="images/skills/Woodcutting_icon.png">
-        <p class="level">1</p>
+        <p id="woodcutting" class="level">1</p>
       </div>
     </div>
 
     <div class="skills-row">
       <div class="stat">
         <img class="skill" src="images/skills/Runecraft_icon.png">
-        <p class="level">1</p>
+        <p id="runecraft" class="level">1</p>
       </div>
       <div class="stat">
         <img class="skill" src="images/skills/Slayer_icon.png">
-        <p class="level">1</p>
+        <p id="slayer" class="level">1</p>
       </div>
       <div class="stat">
         <img class="skill" src="images/skills/Farming_icon.png">
-        <p class="level">1</p>
+        <p id="farming" class="level">1</p>
       </div>
     </div>
 
     <div class="skills-row">
       <div class="stat">
         <img class="skill" src="images/skills/Construction_icon.png">
-        <p class="level">1</p>
+        <p id="construction" class="level">1</p>
       </div>
       <div class="stat">
         <img class="skill" src="images/skills/Hunter_icon.png">
-        <p class="level">1</p>
+        <p id="hunter" class="level">1</p>
       </div>
       <div class="stat text">
         <p class="total" style="top:0">Total level:</p>
-        <p class="total" style="bottom:0">1</p>
+        <p id="total" class="total" style="bottom:0">1</p>
       </div>
     </div>
+
+    <script src="js/stats.js"></script>
 
   </body>
 
