@@ -37,7 +37,7 @@ $(function() {
   $(':submit').click(function(event) {
     event.preventDefault();
     localStorage.setItem('username', $(':text').val());
-    setTimeout(getStats(), 3000);
+    getStats();
   });
 });
 
