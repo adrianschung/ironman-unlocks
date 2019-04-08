@@ -44,7 +44,6 @@ $(function() {
 function getStats(callback) {
   $.ajaxSetup({ async: false });
   $.get(url + formatName(localStorage.getItem('username')), function(data) {
-    console.log(data);
     var levels = data.split('\n');
     $.each(levels, function(index, value) {
       var info = value.split(',');
