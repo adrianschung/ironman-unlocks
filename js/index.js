@@ -60,6 +60,13 @@ const items = [
   'an-hat',
   'an-top',
   'an-bottom',
+  'j-helm',
+  'j-top',
+  'j-bottom',
+  'g-rap',
+  's-staff',
+  'v-scythe',
+  'a-def',
 ];
 
 //Load state of an item
