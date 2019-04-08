@@ -48,6 +48,18 @@ const items = [
   'void-mage',
   'elite-top',
   'elite-robe',
+  'd-scroll',
+  'a-scroll',
+  't-buck',
+  'dh-cb',
+  'd-bul',
+  'd-claw',
+  'e-maul',
+  'k-wand',
+  't-bow',
+  'an-hat',
+  'an-top',
+  'an-bottom',
 ];
 
 //Load state of an item
