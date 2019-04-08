@@ -95,6 +95,7 @@ td {
 }
 
 .stat {
+  background-color: #545454;
   border-width: 3px;
   border-color: black;
   border-style: solid;
@@ -108,6 +109,8 @@ td {
 
 .text {
   display: block;
+  background-color: black;
+  border-color: yellow;
 }
 
 .total {
