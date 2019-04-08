@@ -43,7 +43,7 @@ $(function() {
 
 function getStats(callback) {
   $.ajaxSetup({ async: false });
-  $.get(url + localStorage.getItem('username'), function(data) {
+  $.get(url + formatName(localStorage.getItem('username')), function(data) {
     console.log(data);
     var levels = data.split('\n');
     $.each(levels, function(index, value) {
@@ -58,4 +58,8 @@ function setStats(stat, index) {
   if (localStorage.getItem(stat)) {
     $(`#${stat}`).text(localStorage.getItem(`${stat}`));
   }
+}
+
+function formatName(name) {
+  return name.split(' ').join('_');
 }
