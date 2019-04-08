@@ -1,5 +1,9 @@
 const proxy = 'https://cors.io/?';
 
+const url =
+  proxy +
+  'https://secure.runescape.com/m=hiscore_oldschool/index_lite.ws?player=';
+
 const skills = [
   'total',
   'attack',
@@ -26,10 +30,6 @@ const skills = [
   'hunter',
   'construction',
 ];
-
-var url =
-  proxy +
-  'https://secure.runescape.com/m=hiscore_oldschool/index_lite.ws?player=';
 
 $(function() {
   skills.forEach(setStats);
