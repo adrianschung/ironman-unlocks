@@ -36,20 +36,23 @@ $(function() {
   $(':text').val(localStorage.getItem('username'));
   $(':submit').click(function(event) {
     event.preventDefault();
-    localStorage.setItem('username', $(':text').val());
     getStats();
   });
 });
 
 function getStats(callback) {
   $.ajaxSetup({ async: false });
-  $.get(url + formatName(localStorage.getItem('username')), function(data) {
+  $.get(url + formatName($(':text').val()), function(data) {
+    localStorage.setItem('username', $(':text').val());
     var levels = data.split('\n');
     $.each(levels, function(index, value) {
       var info = value.split(',');
       localStorage.setItem(skills[index], info[1]);
+      localStorage.setItem(skills[index] + 'XP', info[2]);
     });
     skills.forEach(setStats);
+  }).fail(function() {
+    alert('Username not found');
   });
 }
 
