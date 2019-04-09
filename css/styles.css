@@ -59,6 +59,12 @@ td {
   padding: 5px;
 }
 
+.calculator {
+  margin: 0 auto;
+  width: 30%;
+  height: 80%;
+}
+
 .gwd-title {
   white-space: nowrap;
 }
@@ -74,6 +80,13 @@ td {
   font-size: 24px;
   text-align: center;
   vertical-align: middle;
+}
+
+.lvl-box {
+  text-align: left;
+  display: inline-block;
+  margin-bottom: 3%;
+  width: 50%;
 }
 
 .skill {
@@ -126,6 +139,10 @@ td {
 .wide {
   height: auto;
   width: 55%;
+}
+
+.xp-box {
+  display: inline-block;
 }
 
 @media only screen and (min-width: 768px) {
