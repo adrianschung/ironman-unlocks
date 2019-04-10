@@ -145,6 +145,28 @@ td {
   display: inline-block;
 }
 
+#xp-table {
+  border-collapse: collapse;
+  font-size: 16px;
+  font-weight: normal;
+  height: auto;
+  width: auto;
+}
+
+#xp-table td,
+#xp-table th {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+#xp-table tr:nth-child(odd) {
+  background-color: #5b4f41;
+}
+
+#xp-table tr:nth-child(even) {
+  background-color: #4c463f;
+}
+
 @media only screen and (min-width: 768px) {
   table {
     display: inline-block;

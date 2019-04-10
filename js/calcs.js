@@ -49,6 +49,6 @@ $(function() {
   $('#goal-lvl').val(goalLvl);
   $('#xp').text(`You need ${goalXP} xp to reach your goal`);
   $.each(boneXP, function(index, value) {
-    $(`#${index}`).text(boneNumber(value, goalXP));
+    $(`#bone-${index + 1}`).text(boneNumber(value, goalXP));
   });
 });
