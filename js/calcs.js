@@ -2,6 +2,23 @@ const maxLevel = 200;
 const gAltar = 3.5;
 const ecto = 4;
 const cAltar = 7;
+const boneXP = [
+  4.5,
+  4.5,
+  5,
+  5.3,
+  15,
+  15,
+  25,
+  30,
+  50,
+  72,
+  72,
+  80,
+  110,
+  125,
+  140,
+];
 var currentXP = parseInt(localStorage.getItem('prayerXP'));
 var goalLvl = parseInt(localStorage.getItem('prayer')) + 1;
 var points = 0;
@@ -21,9 +38,17 @@ function getRemainingXP(xp, lvl) {
   return remainingXP;
 }
 
+function boneNumber(boneXP, goal) {
+  var remainingNumber = Math.ceil(goal / boneXP);
+  return remainingNumber;
+}
+
 $(function() {
   var goalXP = getRemainingXP(currentXP, goalLvl);
   $('#current-xp').val(currentXP);
   $('#goal-lvl').val(goalLvl);
   $('#xp').text(`You need ${goalXP} xp to reach your goal`);
+  $.each(boneXP, function(index, value) {
+    $(`#${index}`).text(boneNumber(value, goalXP));
+  });
 });
