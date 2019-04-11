@@ -30,6 +30,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/calcs.js"></script>
   </head>
   <body>
     <a href="stats.html">
@@ -42,11 +43,15 @@
     <br />
     <br />
     <div class="calculator">
-      <div class="lvl-box">Current XP: <input id="current-xp" size="8" /></div>
+      <div class="lvl-box">Current XP:<input id="current-xp" size="8" /></div>
       <div class="lvl-box">
-        Goal Level:
-        <input id="goal-lvl" size="1" />
+        Goal Level:<input id="goal-lvl" size="1" />
       </div>
+      <br />
+      <div class="options">Gided Altar (350%)<input type="checkbox" /></div>
+      <div class="options">Ectofunctus (400%)<input type="checkbox" /></div>
+      <div class="options">Ectofunctus (400%)<input type="checkbox" /></div>
+      <br />
       <p id="xp">
         You need 0 xp to reach your goal
       </p>
@@ -116,6 +121,4 @@
         </tr>
     </div>
   </body>
-
-  <script src="js/calcs.js"></script>
 </html>
