@@ -33,22 +33,45 @@ function getXP(lvl) {
 }
 
 function getRemainingXP(xp, lvl) {
-  var goalXP = getXP(lvl);
-  var remainingXP = goalXP - xp;
+  const goalXP = getXP(lvl);
+  const remainingXP = goalXP - xp;
   return remainingXP;
 }
 
 function boneNumber(boneXP, goal) {
-  var remainingNumber = Math.ceil(goal / boneXP);
+  const remainingNumber = Math.ceil(goal / boneXP);
   return remainingNumber;
 }
 
-$(function() {
-  var goalXP = getRemainingXP(currentXP, goalLvl);
-  $('#current-xp').val(currentXP);
-  $('#goal-lvl').val(goalLvl);
-  $('#xp').text(`You need ${goalXP} xp to reach your goal`);
+function calcBones(goalXP) {
   $.each(boneXP, function(index, value) {
     $(`#bone-${index + 1}`).text(boneNumber(value, goalXP));
+  });
+}
+
+function xpText(goalXP) {
+  $('#xp').text(`You need ${goalXP} xp to reach your goal`);
+}
+
+function updateCalc() {
+  const xp = $('#current-xp').val();
+  const goal = $('#goal-lvl').val();
+  const goalXP = getRemainingXP(xp, goal);
+  xpText(goalXP);
+  calcBones(goalXP);
+}
+
+$(function() {
+  const initialGoalXP = getRemainingXP(currentXP, goalLvl);
+  $('#current-xp').val(currentXP);
+  $('#goal-lvl').val(goalLvl);
+  xpText(initialGoalXP);
+  calcBones(initialGoalXP);
+  $('#current-xp').change(function() {
+    updateCalc();
+  });
+
+  $('#goal-lvl').change(function() {
+    updateCalc();
   });
 });
