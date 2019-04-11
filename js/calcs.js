@@ -21,10 +21,10 @@ const boneXP = [
 ];
 var currentXP = parseInt(localStorage.getItem('prayerXP'));
 var goalLvl = parseInt(localStorage.getItem('prayer')) + 1;
-var points = 0;
-var output = 1;
 
 function getXP(lvl) {
+  var points = 0;
+  var output = 1;
   for (i = 1; i <= lvl - 1; i++) {
     points += Math.floor(i + 300 * Math.pow(2, i / 7));
     output = Math.floor(points / 4);
