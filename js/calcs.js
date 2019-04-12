@@ -67,11 +67,18 @@ $(function() {
   $('#goal-lvl').val(goalLvl);
   xpText(initialGoalXP);
   calcBones(initialGoalXP);
+
   $('#current-xp').change(function() {
     updateCalc();
   });
 
   $('#goal-lvl').change(function() {
     updateCalc();
+  });
+
+  $('input:checkbox').click(function() {
+    $('input:checkbox')
+      .not(this)
+      .prop('checked', false);
   });
 });
