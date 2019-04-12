@@ -61,7 +61,7 @@ td {
 
 .calculator {
   margin: 0 auto;
-  width: 30%;
+  width: 60%;
   height: 80%;
 }
 
@@ -83,14 +83,20 @@ td {
 }
 
 .lvl-box {
-  text-align: left;
-  display: inline-block;
-  margin-bottom: 3%;
-  width: 50%;
+  margin: auto;
+  margin-bottom: 1%;
+  width: auto;
 }
 
-.options {
-  display: inline-block;
+.options-table {
+  display: table;
+  margin: 0 auto;
+}
+
+.options li {
+  display: inline;
+  list-style-type: none;
+  float: left;
 }
 
 .skill {
@@ -154,7 +160,7 @@ td {
   font-size: 16px;
   font-weight: normal;
   height: auto;
-  width: auto;
+  width: 60%;
 }
 
 #xp-table td,
