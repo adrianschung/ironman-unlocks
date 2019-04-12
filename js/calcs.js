@@ -45,6 +45,13 @@ function boneNumber(boneXP, goal) {
 
 function calcBones(goalXP) {
   $.each(boneXP, function(index, value) {
+    if ($('#g-altar').is(':checked')) {
+      value *= 3.5;
+    } else if ($('#ecto').is(':checked')) {
+      value *= 4;
+    } else if ($('#c-altar').is(':checked')) {
+      value *= 7;
+    }
     $(`#bone-${index + 1}`).text(boneNumber(value, goalXP));
   });
 }
@@ -68,6 +75,12 @@ $(function() {
   xpText(initialGoalXP);
   calcBones(initialGoalXP);
 
+  $('input:checkbox').click(function() {
+    $('input:checkbox')
+      .not(this)
+      .prop('checked', false);
+  });
+
   $('#current-xp').change(function() {
     updateCalc();
   });
@@ -76,9 +89,7 @@ $(function() {
     updateCalc();
   });
 
-  $('input:checkbox').click(function() {
-    $('input:checkbox')
-      .not(this)
-      .prop('checked', false);
+  $('input:checkbox').change(function() {
+    updateCalc();
   });
 });
