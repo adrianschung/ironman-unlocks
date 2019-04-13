@@ -77,15 +77,15 @@ function loadItems(item, index) {
 //Load state of every item on page load
 $(function() {
   items.forEach(loadItems);
-});
 
-//Change state of item on click
-$('.icon').click(function() {
-  if ($(this).hasClass('unlocked')) {
-    $(this).toggleClass('unlocked');
-    localStorage.setItem($(this).attr('id'), '');
-  } else {
-    $(this).toggleClass('unlocked');
-    localStorage.setItem($(this).attr('id'), 'unlocked');
-  }
+  //Change state of item on click
+  $('.icon').click(function() {
+    if ($(this).hasClass('unlocked')) {
+      $(this).toggleClass('unlocked');
+      localStorage.setItem($(this).attr('id'), '');
+    } else {
+      $(this).toggleClass('unlocked');
+      localStorage.setItem($(this).attr('id'), 'unlocked');
+    }
+  });
 });
