@@ -8,19 +8,24 @@ Currently only Barrows and GWD items are listed but more are being added.
 
 ## Future items
 
+- Early unlocks (Whip, torso, trident, fire cape)
 - DWH
 - Slayer
 - Clue
+- Dagannoth Kings
+- Grotesque Guardians
 - Corp
 - Zenyte
 - Vorkath
 - Cerberus
 - Zulrah
 - Sire
+- Hydra
+- Wilderness bosses
 
 ## Future features
 
 - Pets tracker
-- Calculators for skills
+- More calculators
 - Skill planners
 - Links to guides (maybe?)
