@@ -1,29 +1,45 @@
 <!DOCTYPE html>
 <html>
   <head>
-
     <title>Ironman Unlocks</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
-    <link rel="manifest" href="images/favicons/site.webmanifest">
-    <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#b91d47">
-    <meta name="theme-color" content="#ffffff">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="images/favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#b91d47" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
     <script src="js/jquery-3.3.1.min.js"></script>
-
+    <script src="js/stats.js"></script>
   </head>
 
   <body>
-
-    <img class="tab" src="images/tabs/stats_active.png">
+    <img class="tab" src="images/tabs/stats_active.png" />
     <a href="index.html">
-      <img class="tab" src="images/tabs/inv.png" title="unlocks">
+      <img class="tab" src="images/tabs/inv.png" title="unlocks" />
     </a>
     <a href="calcs.html">
-      <img class="tab" src="images/tabs/calcs.png" title="calculators">
+      <img class="tab" src="images/tabs/calcs.png" title="calculators" />
     </a>
 
     <br />
@@ -31,124 +47,124 @@
 
     <form class="username" autocomplete="off">
       Username:
-      <input type="text" name="username" size="12">
-      <input type="submit" value="Submit">
+      <input type="text" name="username" size="12" />
+      <input type="submit" value="Submit" />
     </form>
 
     <br />
 
     <div class="skills-row">
       <div class="stat">
-        <img class="skill" src="images/skills/Attack_icon.png">
+        <img class="skill" src="images/skills/Attack_icon.png" />
         <p id="attack" class="level">1</p>
       </div>
       <div class="stat">
-        <img class="skill" src="images/skills/Hitpoints_icon.png">
+        <img class="skill" src="images/skills/Hitpoints_icon.png" />
         <p id="hitpoints" class="level">1</p>
       </div>
       <div class="stat">
-        <img class="skill" src="images/skills/Mining_icon.png">
+        <img class="skill" src="images/skills/Mining_icon.png" />
         <p id="mining" class="level">1</p>
       </div>
     </div>
 
     <div class="skills-row">
       <div class="stat">
-        <img class="skill" src="images/skills/Strength_icon.png">
+        <img class="skill" src="images/skills/Strength_icon.png" />
         <p id="strength" class="level">1</p>
       </div>
       <div class="stat">
-        <img class="skill" src="images/skills/Agility_icon.png">
+        <img class="skill" src="images/skills/Agility_icon.png" />
         <p id="agility" class="level">1</p>
       </div>
       <div class="stat">
-        <img class="skill" src="images/skills/Smithing_icon.png">
+        <img class="skill" src="images/skills/Smithing_icon.png" />
         <p id="smithing" class="level">1</p>
       </div>
     </div>
 
     <div class="skills-row">
       <div class="stat">
-        <img class="skill" src="images/skills/Defence_icon.png">
+        <img class="skill" src="images/skills/Defence_icon.png" />
         <p id="defence" class="level">1</p>
       </div>
       <div class="stat">
-        <img class="skill wide" src="images/skills/Herblore_icon.png">
+        <img class="skill wide" src="images/skills/Herblore_icon.png" />
         <p id="herblore" class="level">1</p>
       </div>
       <div class="stat">
-        <img class="skill" src="images/skills/Fishing_icon.png">
+        <img class="skill" src="images/skills/Fishing_icon.png" />
         <p id="fishing" class="level">1</p>
       </div>
     </div>
 
     <div class="skills-row">
       <div class="stat">
-        <img class="skill" src="images/skills/Ranged_icon.png">
+        <img class="skill" src="images/skills/Ranged_icon.png" />
         <p id="ranged" class="level">1</p>
       </div>
       <div class="stat">
-        <img class="skill wide" src="images/skills/Thieving_icon.png">
+        <img class="skill wide" src="images/skills/Thieving_icon.png" />
         <p id="thieving" class="level">1</p>
       </div>
       <div class="stat">
-        <img class="skill" src="images/skills/Cooking_icon.png">
+        <img class="skill" src="images/skills/Cooking_icon.png" />
         <p id="cooking" class="level">1</p>
       </div>
     </div>
 
     <div class="skills-row">
       <div class="stat">
-        <img class="skill" src="images/skills/Prayer_icon.png">
+        <img class="skill" src="images/skills/Prayer_icon.png" />
         <p id="prayer" class="level">1</p>
       </div>
       <div class="stat">
-        <img class="skill" src="images/skills/Crafting_icon.png">
+        <img class="skill" src="images/skills/Crafting_icon.png" />
         <p id="crafting" class="level">1</p>
       </div>
       <div class="stat">
-        <img class="skill" src="images/skills/Firemaking_icon.png">
+        <img class="skill" src="images/skills/Firemaking_icon.png" />
         <p id="firemaking" class="level">1</p>
       </div>
     </div>
 
     <div class="skills-row">
       <div class="stat">
-        <img class="skill" src="images/skills/Magic_icon.png">
+        <img class="skill" src="images/skills/Magic_icon.png" />
         <p id="magic" class="level">1</p>
       </div>
       <div class="stat">
-        <img class="skill" src="images/skills/Fletching_icon.png">
+        <img class="skill" src="images/skills/Fletching_icon.png" />
         <p id="fletching" class="level">1</p>
       </div>
       <div class="stat">
-        <img class="skill" src="images/skills/Woodcutting_icon.png">
+        <img class="skill" src="images/skills/Woodcutting_icon.png" />
         <p id="woodcutting" class="level">1</p>
       </div>
     </div>
 
     <div class="skills-row">
       <div class="stat">
-        <img class="skill" src="images/skills/Runecraft_icon.png">
+        <img class="skill" src="images/skills/Runecraft_icon.png" />
         <p id="runecraft" class="level">1</p>
       </div>
       <div class="stat">
-        <img class="skill" src="images/skills/Slayer_icon.png">
+        <img class="skill" src="images/skills/Slayer_icon.png" />
         <p id="slayer" class="level">1</p>
       </div>
       <div class="stat">
-        <img class="skill" src="images/skills/Farming_icon.png">
+        <img class="skill" src="images/skills/Farming_icon.png" />
         <p id="farming" class="level">1</p>
       </div>
     </div>
 
     <div class="skills-row">
       <div class="stat">
-        <img class="skill" src="images/skills/Construction_icon.png">
+        <img class="skill" src="images/skills/Construction_icon.png" />
         <p id="construction" class="level">1</p>
       </div>
       <div class="stat">
-        <img class="skill" src="images/skills/Hunter_icon.png">
+        <img class="skill" src="images/skills/Hunter_icon.png" />
         <p id="hunter" class="level">1</p>
       </div>
       <div class="stat text">
@@ -156,9 +172,5 @@
         <p id="total" class="total" style="bottom:0">1</p>
       </div>
     </div>
-
-    <script src="js/stats.js"></script>
-
   </body>
-
 </html>
