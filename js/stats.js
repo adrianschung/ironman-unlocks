@@ -31,15 +31,6 @@ const skills = [
   'construction',
 ];
 
-$(function() {
-  skills.forEach(setStats);
-  $(':text').val(localStorage.getItem('username'));
-  $(':submit').click(function(event) {
-    event.preventDefault();
-    getStats();
-  });
-});
-
 function getStats(callback) {
   $.ajaxSetup({ async: false });
   $.get(url + formatName($(':text').val()), function(data) {
@@ -65,3 +56,12 @@ function setStats(stat, index) {
 function formatName(name) {
   return name.split(' ').join('_');
 }
+
+$(function() {
+  skills.forEach(setStats);
+  $(':text').val(localStorage.getItem('username'));
+  $(':submit').click(function(event) {
+    event.preventDefault();
+    getStats();
+  });
+});
