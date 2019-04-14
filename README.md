@@ -29,3 +29,5 @@ Currently only Barrows and GWD items are listed but more are being added.
 - More calculators
 - Skill planners
 - Links to guides (maybe?)
+- Stat comparer
+- Reddit feed

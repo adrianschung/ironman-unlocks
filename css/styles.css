@@ -65,10 +65,6 @@ td {
   height: 80%;
 }
 
-.gwd-title {
-  white-space: nowrap;
-}
-
 .icon {
   cursor: pointer;
   object-fit: cover;
@@ -181,20 +177,11 @@ td {
   table {
     display: inline-block;
     margin: 0 2%;
-    width: 20%;
   }
 
   td {
     height: 5.5%;
     width: 5.5%;
-  }
-
-  .barrows {
-    width: 30%;
-  }
-
-  .gwd {
-    width: 25%;
   }
 
   .stat {
@@ -206,9 +193,24 @@ td {
     height: 72px;
     width: auto;
   }
-}
+
+  .table-3{
+    width: 20%;
+  }
+
+  .table-4 {
+    width: 25%;
+  }
+
+  .table-6 {
+    width: 30%;
+  }
 
 @media only screen and (min-width: 1440px) {
+  .items-wrapper {
+    margin-bottom: 30px;
+  }
+
   .stat {
     width: 10%;
   }
@@ -219,9 +221,5 @@ td {
 
   .username {
     font-size: 24px;
-  }
-
-  .items-wrapper {
-    margin-bottom: 30px;
   }
 }
