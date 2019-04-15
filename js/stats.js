@@ -1,9 +1,7 @@
 const proxy = 'https://cors.io/?';
-
 const url =
   proxy +
   'https://secure.runescape.com/m=hiscore_oldschool/index_lite.ws?player=';
-
 const skills = [
   'total',
   'attack',
@@ -31,6 +29,7 @@ const skills = [
   'construction',
 ];
 
+//GET request to Oldschool Runescape Hi-Scores API and save each stat to localstorage
 function getStats(callback) {
   $.ajaxSetup({ async: false });
   $.get(url + formatName($(':text').val()), function(data) {
@@ -47,19 +46,24 @@ function getStats(callback) {
   });
 }
 
+//Assign each stat to corresponding text
 function setStats(stat, index) {
   if (localStorage.getItem(stat)) {
     $(`#${stat}`).text(localStorage.getItem(`${stat}`));
   }
 }
 
+//Format names with spaces to be searched properly
 function formatName(name) {
   return name.split(' ').join('_');
 }
 
 $(function() {
+  //Set skills and username to previous search
   skills.forEach(setStats);
   $(':text').val(localStorage.getItem('username'));
+
+  //Search for user
   $(':submit').click(function(event) {
     event.preventDefault();
     getStats();
