@@ -22,6 +22,7 @@ const boneXP = [
 var currentXP = parseInt(localStorage.getItem('prayerXP'));
 var goalLvl = parseInt(localStorage.getItem('prayer')) + 1;
 
+//Get xp needed for level using Runescape formula
 function getXP(lvl) {
   var points = 0;
   var output = 1;
@@ -32,17 +33,20 @@ function getXP(lvl) {
   return output;
 }
 
+//Calculate xp difference between current xp and goal level
 function getRemainingXP(xp, lvl) {
   const goalXP = getXP(lvl);
   const remainingXP = goalXP - xp;
   return remainingXP;
 }
 
+//Calculate number remaining for specific bone
 function boneNumber(boneXP, goal) {
   const remainingNumber = Math.ceil(goal / boneXP);
   return remainingNumber;
 }
 
+//Calculate and replace text for each bone including modifier
 function calcBones(goalXP) {
   $.each(boneXP, function(index, value) {
     if ($('#g-altar').is(':checked')) {
@@ -56,10 +60,12 @@ function calcBones(goalXP) {
   });
 }
 
+//Change text for remaining xp
 function xpText(goalXP) {
   $('#xp').text(`You need ${goalXP} xp to reach your goal`);
 }
 
+//Update all parts of calculator
 function updateCalc() {
   const xp = $('#current-xp').val();
   const goal = $('#goal-lvl').val();
@@ -69,18 +75,21 @@ function updateCalc() {
 }
 
 $(function() {
+  //Load xp from stats and calculate for next level
   const initialGoalXP = getRemainingXP(currentXP, goalLvl);
   $('#current-xp').val(currentXP);
   $('#goal-lvl').val(goalLvl);
   xpText(initialGoalXP);
   calcBones(initialGoalXP);
 
+  //Prevent multiple modifiers from being checked
   $('input:checkbox').click(function() {
     $('input:checkbox')
       .not(this)
       .prop('checked', false);
   });
 
+  //Make changes when inputs are changed
   $('#current-xp').change(function() {
     updateCalc();
   });
