@@ -71,6 +71,19 @@ td {
   opacity: 0.2;
 }
 
+.icon-box {
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+  width: 5%;
+}
+
+.icon-box:after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+
 .level {
   margin: auto 10% auto auto;
   font-size: 24px;
@@ -194,7 +207,7 @@ td {
     width: auto;
   }
 
-  .table-3{
+  .table-3 {
     width: 20%;
   }
 
@@ -205,6 +218,7 @@ td {
   .table-6 {
     width: 30%;
   }
+}
 
 @media only screen and (min-width: 1440px) {
   .items-wrapper {
