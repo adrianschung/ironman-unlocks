@@ -1,26 +1,11 @@
-const maxLevel = 200;
-const gAltar = 3.5;
-const ecto = 4;
-const cAltar = 7;
-const boneXP = [
-  4.5,
-  4.5,
-  5,
-  5.3,
-  15,
-  15,
-  25,
-  30,
-  50,
-  72,
-  72,
-  80,
-  110,
-  125,
-  140,
-];
-var currentXP = parseInt(localStorage.getItem('prayerXP'));
-var goalLvl = parseInt(localStorage.getItem('prayer')) + 1;
+const maxLevel = 200,
+  gAltar = 3.5,
+  ecto = 4,
+  cAltar = 7,
+  boneXP = [4.5, 4.5, 5, 5.3, 15, 15, 25, 30, 50, 72, 72, 80, 110, 125, 140];
+
+var currentXP = parseInt(localStorage.getItem('prayerXP')),
+  goalLvl = parseInt(localStorage.getItem('prayer')) + 1;
 
 //Get xp needed for level using Runescape formula
 function getXP(lvl) {
@@ -67,8 +52,8 @@ function xpText(goalXP) {
 
 //Update all parts of calculator
 function updateCalc() {
-  const xp = $('#current-xp').val();
-  const goal = $('#goal-lvl').val();
+  const xp = $('#current-xp').val(),
+    goal = $('#goal-lvl').val();
   const goalXP = getRemainingXP(xp, goal);
   xpText(goalXP);
   calcBones(goalXP);

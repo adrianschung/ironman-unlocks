@@ -6,6 +6,7 @@
     url('fonts/runescape_chat_font.svg#Runescape-Chat-Font') format('svg');
   font-weight: normal;
   font-style: normal;
+  font-size: 14px;
 }
 
 a {
@@ -166,7 +167,7 @@ td {
 
 #xp-table {
   border-collapse: collapse;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: normal;
   height: auto;
   width: 60%;
