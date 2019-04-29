@@ -73,6 +73,9 @@ const items = [
   'w-ring',
   'dr-axe',
   'm-staff',
+  't-fang',
+  'm-fang',
+  's-vis',
 ];
 
 //Load state of an item
