@@ -18,7 +18,6 @@ Currently only Barrows and GWD items are listed but more are being added.
 - Zenyte
 - Vorkath
 - Cerberus
-- Zulrah
 - Sire
 - Hydra
 - Wilderness bosses
@@ -30,4 +29,5 @@ Currently only Barrows and GWD items are listed but more are being added.
 - Skill planners
 - Links to guides (maybe?)
 - Stat comparer
+- Luck calculator
 - Reddit feed
