@@ -17,10 +17,10 @@ Currently only Barrows and GWD items are listed but more are being added.
 - Corp
 - Zenyte
 - Vorkath
-- Cerberus
 - Sire
 - Hydra
 - Wilderness bosses
+- Wintertodt
 
 ## Future features
 
