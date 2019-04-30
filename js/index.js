@@ -80,6 +80,9 @@ const items = [
   'pegs',
   'eter',
   'smoul',
+  'a-whip',
+  'a-dag',
+  'a-blud',
 ];
 
 //Load state of an item
