@@ -83,6 +83,10 @@ const items = [
   'a-whip',
   'a-dag',
   'a-blud',
+  'suff',
+  'ang',
+  'torm',
+  'tort',
 ];
 
 //Load state of an item
