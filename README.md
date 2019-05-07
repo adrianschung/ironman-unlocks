@@ -14,7 +14,6 @@ Currently only Barrows and GWD items are listed but more are being added.
 - Clue
 - Grotesque Guardians
 - Corp
-- Zenyte
 - Vorkath
 - Hydra
 - Wilderness bosses
