@@ -87,6 +87,9 @@ const items = [
   'ang',
   'torm',
   'tort',
+  'spec',
+  'arc',
+  'ely',
 ];
 
 //Load state of an item
