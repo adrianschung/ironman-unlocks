@@ -158,7 +158,9 @@ td {
 
 .wide {
   height: auto;
-  width: 55%;
+  width: 45%;
+  margin-top: 8%;
+  margin-bottom: 8%;
 }
 
 .xp-box {
