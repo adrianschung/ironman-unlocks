@@ -91,8 +91,8 @@ const items = [
   'arc',
   'ely',
   'vork',
+  'sk-vis',
   'd-neck',
-  's-vis',
 ];
 
 //Load state of an item
