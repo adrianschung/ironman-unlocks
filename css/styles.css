@@ -167,7 +167,7 @@ td {
   display: inline-block;
 }
 
-#xp-table {
+.xp-table {
   border-collapse: collapse;
   font-size: 14px;
   font-weight: normal;
@@ -175,17 +175,17 @@ td {
   width: 60%;
 }
 
-#xp-table td,
-#xp-table th {
+.xp-table td,
+.xp-table th {
   border: 1px solid black;
   padding: 8px;
 }
 
-#xp-table tr:nth-child(odd) {
+.xp-table tr:nth-child(odd) {
   background-color: #5b4f41;
 }
 
-#xp-table tr:nth-child(even) {
+.xp-table tr:nth-child(even) {
   background-color: #4c463f;
 }
 
