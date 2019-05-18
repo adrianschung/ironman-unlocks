@@ -64,6 +64,16 @@ $(function() {
   const initialGoalXP = getRemainingXP(currentXP, goalLvl);
   $('#current-xp').val(currentXP);
   $('#goal-lvl').val(goalLvl);
+  var tabsWrapper = $('.tabs-wrapper');
+  if( tabsWrapper.length > 0 ){
+    tabsWrapper.find('> ul a').click(function(e){
+        e.preventDefault();
+        var me = $(this);
+
+        tabsWrapper.find('.active').removeClass('active');
+        me.parent().add( me.attr('href') ).addClass('active');
+    });
+  }
   xpText(initialGoalXP);
   calcBones(initialGoalXP);
 

@@ -46,128 +46,140 @@
     <img class="tab" src="images/tabs/calcs-active.png" />
     <br />
     <br />
-    <div id="prayer-calc" class="calculator">
-      <div class="lvl-box">Current XP:<input id="current-xp" size="8" /></div>
-      <div class="lvl-box">Goal Level:<input id="goal-lvl" size="1" /></div>
-      <div class="options-table">
-        <ul class="options">
-          <li>Gided Altar (350%)<input id="g-altar" type="checkbox" /></li>
-          <li>Ectofunctus (400%)<input id="ecto" type="checkbox" /></li>
-          <li>Chaos Altar (700%)<input id="c-altar" type="checkbox" /></li>
-        </ul>
+    <div class="tabs-wrapper">
+      <ul>
+        <li><a href="#prayer-calc">Prayer</a></li>
+        <li>
+          <a href="#construction-calc">Construction</a>
+        </li>
+      </ul>
+      <div id="prayer-calc" class="calculator active">
+        <div class="lvl-box">Current XP:<input id="current-xp" size="8" /></div>
+        <div class="lvl-box">Goal Level:<input id="goal-lvl" size="1" /></div>
+        <div class="options-table">
+          <ul class="options">
+            <li>Gided Altar (350%)<input id="g-altar" type="checkbox" /></li>
+            <li>Ectofunctus (400%)<input id="ecto" type="checkbox" /></li>
+            <li>Chaos Altar (700%)<input id="c-altar" type="checkbox" /></li>
+          </ul>
+        </div>
+        <p id="xp">
+          You need 0 xp to reach your goal
+        </p>
+        <table id="prayer" class="xp-table">
+          <tr>
+            <th>Item</th>
+            <th>Number</th>
+          </tr>
+          <tr>
+            <td>Bones</td>
+            <td id="bone-1">0</td>
+          </tr>
+          <tr>
+            <td>Wolf bones</td>
+            <td id="bone-2">0</td>
+          </tr>
+          <tr>
+            <td>Monkey bones</td>
+            <td id="bone-3">0</td>
+          </tr>
+          <tr>
+            <td>Bat bones</td>
+            <td id="bone-4">0</td>
+          </tr>
+          <tr>
+            <td>Big bones</td>
+            <td id="bone-5">0</td>
+          </tr>
+          <tr>
+            <td>Zogre bones</td>
+            <td id="bone-6">0</td>
+          </tr>
+          <tr>
+            <td>Shaikahan bone</td>
+            <td id="bone-7">0</td>
+          </tr>
+          <tr>
+            <td>Babydragon bones</td>
+            <td id="bone-8">0</td>
+          </tr>
+          <tr>
+            <td>Wyrm bones</td>
+            <td id="bone-9">0</td>
+          </tr>
+          <tr>
+            <td>Dragon bones</td>
+            <td id="bone-10">0</td>
+          </tr>
+          <tr>
+            <td>Wyvern bones</td>
+            <td id="bone-11">0</td>
+          </tr>
+          <tr>
+            <td>Drake bones</td>
+            <td id="bone-12">0</td>
+          </tr>
+          <tr>
+            <td>Hydra bones</td>
+            <td id="bone-13">0</td>
+          </tr>
+          <tr>
+            <td>Dagannoth bones</td>
+            <td id="bone-14">0</td>
+          </tr>
+          <tr>
+            <td>Ourg bones</td>
+            <td id="bone-15">0</td>
+          </tr>
+        </table>
+        <br />
       </div>
-      <p id="xp">
-        You need 0 xp to reach your goal
-      </p>
-      <table id="prayer" class="xp-table">
-        <tr>
-          <th>Item</th>
-          <th>Number</th>
-        </tr>
-        <tr>
-          <td>Bones</td>
-          <td id="bone-1">0</td>
-        </tr>
-        <tr>
-          <td>Wolf bones</td>
-          <td id="bone-2">0</td>
-        </tr>
-        <tr>
-          <td>Monkey bones</td>
-          <td id="bone-3">0</td>
-        </tr>
-        <tr>
-          <td>Bat bones</td>
-          <td id="bone-4">0</td>
-        </tr>
-        <tr>
-          <td>Big bones</td>
-          <td id="bone-5">0</td>
-        </tr>
-        <tr>
-          <td>Zogre bones</td>
-          <td id="bone-6">0</td>
-        </tr>
-        <tr>
-          <td>Shaikahan bone</td>
-          <td id="bone-7">0</td>
-        </tr>
-        <tr>
-          <td>Babydragon bones</td>
-          <td id="bone-8">0</td>
-        </tr>
-        <tr>
-          <td>Wyrm bones</td>
-          <td id="bone-9">0</td>
-        </tr>
-        <tr>
-          <td>Dragon bones</td>
-          <td id="bone-10">0</td>
-        </tr>
-        <tr>
-          <td>Wyvern bones</td>
-          <td id="bone-11">0</td>
-        </tr>
-        <tr>
-          <td>Drake bones</td>
-          <td id="bone-12">0</td>
-        </tr>
-        <tr>
-          <td>Hydra bones</td>
-          <td id="bone-13">0</td>
-        </tr>
-        <tr>
-          <td>Dagannoth bones</td>
-          <td id="bone-14">0</td>
-        </tr>
-        <tr>
-          <td>Ourg bones</td>
-          <td id="bone-15">0</td>
-        </tr>
-      </table>
-      <br />
-      <table id="construction" class="xp-table">
-        <tr>
-          <th>Item</th>
-          <th>Number</th>
-        </tr>
-        <tr>
-          <td>Soft clay</td>
-          <td id="con-1">0</td>
-        </tr>
-        <tr>
-          <td>Bolt of cloth</td>
-          <td id="con-2">0</td>
-        </tr>
-        <tr>
-          <td>Steel bar</td>
-          <td id="con-3">0</td>
-        </tr>
-        <tr>
-          <td>Limestone brick</td>
-          <td id="con-4">0</td>
-        </tr>
-        <tr>
-          <td>Plank</td>
-          <td id="con-5">0</td>
-        </tr>
-        <tr>
-          <td>Oak plank</td>
-          <td id="con-6">0</td>
-        </tr>
-        <tr>
-          <td>Teak plank</td>
-          <td id="con-7">0</td>
-        </tr>
-        <tr>
-          <td>Teak plank (Mythical cape)</td>
-          <td id="con-8">0</td>
-        </tr>
-        <tr>
-          <td>Mahogany plank</td>
-          <td id="con-9">0</td>
-        </tr>
-      </table>
+      <div id="construction-calc" class="calculator">
+        <div class="lvl-box">Current XP:<input id="current-xp" size="8" /></div>
+        <div class="lvl-box">Goal Level:<input id="goal-lvl" size="1" /></div>
+        <table id="construction" class="xp-table">
+          <tr>
+            <th>Item</th>
+            <th>Number</th>
+          </tr>
+          <tr>
+            <td>Soft clay</td>
+            <td id="con-1">0</td>
+          </tr>
+          <tr>
+            <td>Bolt of cloth</td>
+            <td id="con-2">0</td>
+          </tr>
+          <tr>
+            <td>Steel bar</td>
+            <td id="con-3">0</td>
+          </tr>
+          <tr>
+            <td>Limestone brick</td>
+            <td id="con-4">0</td>
+          </tr>
+          <tr>
+            <td>Plank</td>
+            <td id="con-5">0</td>
+          </tr>
+          <tr>
+            <td>Oak plank</td>
+            <td id="con-6">0</td>
+          </tr>
+          <tr>
+            <td>Teak plank</td>
+            <td id="con-7">0</td>
+          </tr>
+          <tr>
+            <td>Teak plank (Mythical cape)</td>
+            <td id="con-8">0</td>
+          </tr>
+          <tr>
+            <td>Mahogany plank</td>
+            <td id="con-9">0</td>
+          </tr>
+        </table>
+      </div>
     </div>
   </body>
 </html>

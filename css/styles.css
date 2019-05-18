@@ -140,6 +140,18 @@ td {
   width: 30%;
 }
 
+.tabs-wrapper > ul li { 
+  display: inline-block;
+}
+
+.tabs-wrapper > div { 
+  display: none;
+}
+
+.tabs-wrapper > div.active { 
+  display: block;
+}
+
 .text {
   display: block;
   background-color: black;
@@ -187,6 +199,10 @@ td {
 
 .xp-table tr:nth-child(even) {
   background-color: #4c463f;
+}
+
+#tabs {
+  margin: auto;
 }
 
 @media only screen and (min-width: 768px) {
