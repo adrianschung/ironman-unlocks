@@ -2,7 +2,8 @@ const maxLevel = 200,
   gAltar = 3.5,
   ecto = 4,
   cAltar = 7,
-  boneXP = [4.5, 4.5, 5, 5.3, 15, 15, 25, 30, 50, 72, 72, 80, 110, 125, 140];
+  boneXP = [4.5, 4.5, 5, 5.3, 15, 15, 25, 30, 50, 72, 72, 80, 110, 125, 140],
+  conXP = [10, 15, 20, 20, 29, 60, 90, 123.33, 140];
 
 var currentXP = parseInt(localStorage.getItem('prayerXP')),
   goalLvl = parseInt(localStorage.getItem('prayer')) + 1;
