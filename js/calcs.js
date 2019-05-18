@@ -45,6 +45,11 @@ function calcBones(goalXP) {
   });
 }
 
+//get xp when switching tabs
+function getSkillXP(skill) {
+  return parseInt(localStorage.getItem(skill))
+}
+
 //Change text for remaining xp
 function xpText(goalXP) {
   $('#xp').text(`You need ${goalXP} xp to reach your goal`);

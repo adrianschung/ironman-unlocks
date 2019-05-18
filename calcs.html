@@ -48,9 +48,15 @@
     <br />
     <div class="tabs-wrapper">
       <ul>
-        <li><a href="#prayer-calc"><img src="images/skills/Prayer_icon.png" title="Prayer" /></a></li>
-        <li>
-          <a href="#construction-calc"><img src="images/skills/Construction_icon.png" title="Construction" /></a>
+        <li id="prayer">
+          <a id="prayer-tab" href="#prayer-calc">
+            <img src="images/skills/Prayer_icon.png" title="Prayer" />
+          </a>
+        </li>
+        <li id="construction">
+          <a id="construction-tab" href="#construction-calc">
+            <img src="images/skills/Construction_icon.png" title="Construction" />
+          </a>
         </li>
       </ul>
       <div class="input-wrapper">
@@ -68,7 +74,7 @@
         You need 0 xp to reach your goal
       </p>
       <div id="prayer-calc" class="calculator active">
-        <table id="prayer" class="xp-table">
+        <table id="prayer-table" class="xp-table">
           <tr>
             <th>Item</th>
             <th>Number</th>
@@ -137,7 +143,7 @@
         <br />
       </div>
       <div id="construction-calc" class="calculator">
-        <table id="construction" class="xp-table">
+        <table id="construction-table" class="xp-table">
           <tr>
             <th>Item</th>
             <th>Number</th>
