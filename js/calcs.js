@@ -45,9 +45,17 @@ function calcBones(goalXP) {
   });
 }
 
-//get xp when switching tabs
-function getSkillXP(skill) {
-  return parseInt(localStorage.getItem(skill))
+//Get xp or levels from localStorage
+function getStorage(item) {
+  return parseInt(localStorage.getItem(item));
+}
+
+//Update current xp and goal level fields
+function updateCalcs(skill) {
+  level = getStorage(skill) + 1;
+  xp = getStorage(skill+'XP');
+  $('#current-xp').val(xp);
+  $('#goal-lvl').val(level);
 }
 
 //Change text for remaining xp
@@ -81,6 +89,12 @@ $(function() {
   }
   xpText(initialGoalXP);
   calcBones(initialGoalXP);
+  $('#construction-tab').click(function() {
+    updateCalcs('construction');
+  });
+  $('#prayer-tab').click(function() {
+    updateCalcs('prayer');
+  });
 
   //Prevent multiple modifiers from being checked
   $('input:checkbox').click(function() {
