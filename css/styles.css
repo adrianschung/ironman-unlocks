@@ -85,6 +85,10 @@ td {
   padding-bottom: 100%;
 }
 
+.input-wrapper {
+  display: block !important;
+}
+
 .level {
   margin: auto 10% auto auto;
   font-size: 24px;
