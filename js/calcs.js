@@ -115,9 +115,11 @@ $(function() {
   calcItems(initialGoalXP, 'prayer');
   $('#construction-tab').click(function() {
     updateInputs('construction');
+    updateCalc('construction');
   });
   $('#prayer-tab').click(function() {
     updateInputs('prayer');
+    updateCalc('prayer');
   });
   updateChanges();
 
