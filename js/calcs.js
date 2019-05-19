@@ -27,23 +27,30 @@ function getRemainingXP(xp, lvl) {
 }
 
 //Calculate number remaining for specific bone
-function boneNumber(boneXP, goal) {
-  const remainingNumber = Math.ceil(goal / boneXP);
+function itemNumber(itemXP, goal) {
+  const remainingNumber = Math.ceil(goal / itemXP);
   return remainingNumber;
 }
 
-//Calculate and replace text for each bone including modifier
-function calcBones(goalXP) {
-  $.each(boneXP, function(index, value) {
-    if ($('#g-altar').is(':checked')) {
-      value *= 3.5;
-    } else if ($('#ecto').is(':checked')) {
-      value *= 4;
-    } else if ($('#c-altar').is(':checked')) {
-      value *= 7;
-    }
-    $(`#bone-${index + 1}`).text(boneNumber(value, goalXP));
-  });
+//Calculate and replace text for each item including modifier
+function calcItems(goalXP, skill) {
+  if (skill === 'prayer') {
+    $.each(boneXP, function(index, value) {
+      if ($('#g-altar').is(':checked')) {
+        value *= 3.5;
+      } else if ($('#ecto').is(':checked')) {
+        value *= 4;
+      } else if ($('#c-altar').is(':checked')) {
+        value *= 7;
+      }
+      $(`#bone-${index + 1}`).text(itemNumber(value, goalXP));
+    });
+  }
+  else if (skill === 'construction') {
+    $.each(conXP, function(index, value) {
+      $(`#con-${index + 1}`).text(itemNumber(value, goalXP));
+    });
+  }
 }
 
 //Get xp or levels from localStorage
@@ -52,7 +59,7 @@ function getStorage(item) {
 }
 
 //Update current xp and goal level fields
-function updateCalcs(skill) {
+function updateInputs(skill) {
   level = getStorage(skill) + 1;
   xp = getStorage(skill+'XP');
   goalXP = getRemainingXP(xp, level);
@@ -67,12 +74,25 @@ function xpText(goalXP) {
 }
 
 //Update all parts of calculator
-function updateCalc() {
+function updateCalc(skill) {
   const xp = $('#current-xp').val(),
     goal = $('#goal-lvl').val();
   const goalXP = getRemainingXP(xp, goal);
   xpText(goalXP);
-  calcBones(goalXP);
+  calcItems(goalXP, skill);
+}
+
+//Make changes when inputs are changed
+function updateChanges() {
+$('#current-xp, #goal-lvl, input:checkbox').change(function() {
+    if ($('#prayer-calc').hasClass('active')) {
+      skill = 'prayer'
+    }
+    else if ($('#construction-calc').hasClass('active')) {
+      skill = 'construction'
+    }
+    updateCalc(skill);
+  });
 }
 
 $(function() {
@@ -80,6 +100,7 @@ $(function() {
   const initialGoalXP = getRemainingXP(currentXP, goalLvl);
   $('#current-xp').val(currentXP);
   $('#goal-lvl').val(goalLvl);
+  var skill = '';
   var tabsWrapper = $('.tabs-wrapper');
   if( tabsWrapper.length > 0 ){
     tabsWrapper.find('> ul a').click(function(e){
@@ -91,31 +112,19 @@ $(function() {
     });
   }
   xpText(initialGoalXP);
-  calcBones(initialGoalXP);
+  calcItems(initialGoalXP, 'prayer');
   $('#construction-tab').click(function() {
-    updateCalcs('construction');
+    updateInputs('construction');
   });
   $('#prayer-tab').click(function() {
-    updateCalcs('prayer');
+    updateInputs('prayer');
   });
+  updateChanges();
 
   //Prevent multiple modifiers from being checked
   $('input:checkbox').click(function() {
     $('input:checkbox')
       .not(this)
       .prop('checked', false);
-  });
-
-  //Make changes when inputs are changed
-  $('#current-xp').change(function() {
-    updateCalc();
-  });
-
-  $('#goal-lvl').change(function() {
-    updateCalc();
-  });
-
-  $('input:checkbox').change(function() {
-    updateCalc();
   });
 });
