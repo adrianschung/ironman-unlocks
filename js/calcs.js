@@ -2,7 +2,7 @@ const maxLevel = 200,
   gAltar = 3.5,
   ecto = 4,
   cAltar = 7,
-  boneXP = [4.5, 4.5, 5, 5.3, 15, 15, 25, 30, 50, 72, 72, 80, 110, 125, 140],
+  prayerXP = [4.5, 4.5, 5, 5.3, 15, 15, 25, 30, 50, 72, 72, 80, 110, 125, 140],
   conXP = [10, 15, 20, 20, 29, 60, 90, 123.33, 140];
 
 var currentXP = parseInt(localStorage.getItem('prayerXP')),
@@ -26,7 +26,7 @@ function getRemainingXP(xp, lvl) {
   return remainingXP;
 }
 
-//Calculate number remaining for specific bone
+//Calculate number remaining for specific item
 function itemNumber(itemXP, goal) {
   const remainingNumber = Math.ceil(goal / itemXP);
   return remainingNumber;
@@ -35,7 +35,7 @@ function itemNumber(itemXP, goal) {
 //Calculate and replace text for each item including modifier
 function calcItems(goalXP, skill) {
   if (skill === 'prayer') {
-    $.each(boneXP, function(index, value) {
+    $.each(prayerXP, function(index, value) {
       if ($('#g-altar').is(':checked')) {
         value *= 3.5;
       } else if ($('#ecto').is(':checked')) {
@@ -43,7 +43,7 @@ function calcItems(goalXP, skill) {
       } else if ($('#c-altar').is(':checked')) {
         value *= 7;
       }
-      $(`#bone-${index + 1}`).text(itemNumber(value, goalXP));
+      $(`#prayer-${index + 1}`).text(itemNumber(value, goalXP));
     });
   }
   else if (skill === 'construction') {
