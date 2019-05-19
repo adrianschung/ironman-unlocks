@@ -105,13 +105,8 @@ td {
 
 .options-table {
   display: table;
-  margin: 0 auto;
-}
-
-.options li {
-  display: inline;
-  list-style-type: none;
-  float: left;
+  margin: auto;
+  margin-bottom: 1%;
 }
 
 .skill {
@@ -208,6 +203,10 @@ td {
 
 #tabs {
   margin: auto;
+}
+
+#xp {
+  margin: 1% auto;
 }
 
 @media only screen and (min-width: 768px) {
