@@ -140,6 +140,10 @@ td {
   width: 30%;
 }
 
+.tabs {
+  -webkit-padding-start: 0;
+}
+
 .tabs-wrapper > ul li { 
   display: inline-block;
 }
