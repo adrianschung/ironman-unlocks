@@ -55,8 +55,10 @@ function getStorage(item) {
 function updateCalcs(skill) {
   level = getStorage(skill) + 1;
   xp = getStorage(skill+'XP');
+  goalXP = getRemainingXP(xp, level);
   $('#current-xp').val(xp);
   $('#goal-lvl').val(level);
+  xpText(goalXP);
 }
 
 //Change text for remaining xp
