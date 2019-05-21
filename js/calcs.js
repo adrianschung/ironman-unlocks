@@ -35,24 +35,25 @@ function itemNumber(itemXP, goal) {
 
 //Calculate and replace text for each item including modifier
 function calcItems(goalXP, skill) {
-  if (skill === 'prayer') {
-    $.each(prayerXP, function(index, value) {
-      if ($('#g-altar').is(':checked')) {
-        value *= 3.5;
-      } else if ($('#ecto').is(':checked')) {
-        value *= 4;
-      } else if ($('#c-altar').is(':checked')) {
-        value *= 7;
-      }
-      $(`#prayer-${index + 1}`).text(itemNumber(value, goalXP));
-    });
-  }
-  else if (skill === 'construction') {
-    $.each(conXP, function(index, value) {
-      $(`#con-${index + 1}`).text(itemNumber(value, goalXP));
-    });
-  }
-  else if (skill === 'woodcutting') {
+  switch (skill) {
+    case 'prayer':
+      $.each(prayerXP, function(index, value) {
+        if ($('#g-altar').is(':checked')) {
+          value *= 3.5;
+        } else if ($('#ecto').is(':checked')) {
+          value *= 4;
+        } else if ($('#c-altar').is(':checked')) {
+          value *= 7;
+        }
+        $(`#prayer-${index + 1}`).text(itemNumber(value, goalXP));
+      });
+      break;
+    case 'construction':
+      $.each(conXP, function(index, value) {
+        $(`#con-${index + 1}`).text(itemNumber(value, goalXP));
+      });
+      break;
+    case 'woodcutting':
     $.each(wcXP, function(index, value) {
       if ($('#lumber').is(':checked')) {
         value *= 1.025;
