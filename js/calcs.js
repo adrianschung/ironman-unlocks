@@ -52,6 +52,14 @@ function calcItems(goalXP, skill) {
       $(`#con-${index + 1}`).text(itemNumber(value, goalXP));
     });
   }
+  else if (skill === 'woodcutting') {
+    $.each(wcXP, function(index, value) {
+      if ($('#lumber').is(':checked')) {
+        value *= 1.025;
+      }
+      $(`#wc-${index + 1}`).text(itemNumber(value, goalXP));
+    });
+  }
 }
 
 //Get xp or levels from localStorage
@@ -92,6 +100,9 @@ $('#current-xp, #goal-lvl, input:checkbox').change(function() {
     else if ($('#construction-calc').hasClass('active')) {
       skill = 'construction'
     }
+    else if ($('#woodcutting-calc').hasClass('active')) {
+      skill = 'woodcutting'
+    }
     updateCalc(skill);
   });
 }
@@ -121,6 +132,10 @@ $(function() {
   $('#prayer-tab').click(function() {
     updateInputs('prayer');
     updateCalc('prayer');
+  });
+  $('#woodcutting-tab').click(function() {
+    updateInputs('woodcutting');
+    updateCalc('woodcutting');
   });
   updateChanges();
 
