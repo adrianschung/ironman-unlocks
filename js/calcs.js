@@ -45,12 +45,12 @@ function calcItems(goalXP, skill) {
         } else if ($('#c-altar').is(':checked')) {
           value *= 7;
         }
-        $(`#prayer-${index + 1}`).text(itemNumber(value, goalXP));
+        $(`#prayer-${index}`).text(itemNumber(value, goalXP));
       });
       break;
     case 'construction':
       $.each(conXP, function(index, value) {
-        $(`#con-${index + 1}`).text(itemNumber(value, goalXP));
+        $(`#con-${index}`).text(itemNumber(value, goalXP));
       });
       break;
     case 'woodcutting':
@@ -58,7 +58,7 @@ function calcItems(goalXP, skill) {
       if ($('#lumber').is(':checked')) {
         value *= 1.025;
       }
-      $(`#wc-${index + 1}`).text(itemNumber(value, goalXP));
+      $(`#wc-${index}`).text(itemNumber(value, goalXP));
     });
   }
 }
