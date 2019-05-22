@@ -50,9 +50,6 @@ table {
   width: 80%;
 }
 
-tbody {
-}
-
 td {
   margin: 0 auto;
   text-align: center;
@@ -106,7 +103,7 @@ td {
 .options-table {
   display: table;
   margin: auto;
-  margin-bottom: 1%;
+  margin-bottom: 1.5%;
 }
 
 .skill {
@@ -142,6 +139,12 @@ td {
 
 .tabs {
   -webkit-padding-start: 0;
+}
+
+.tabs > li.active {
+  background-color: #5b4f41;
+  border-style: solid;
+  border-width: 1px;
 }
 
 .tabs-wrapper > ul li { 
@@ -203,6 +206,19 @@ td {
 
 .xp-table tr:nth-child(even) {
   background-color: #4c463f;
+}
+
+#current-xp,
+#goal-lvl {
+  margin-left: 0.3%;
+}
+
+#current-xp {
+
+}
+
+#goal-lvl {
+  width: 1%;
 }
 
 #tabs {
