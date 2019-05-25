@@ -48,8 +48,9 @@ function getStats(callback) {
 
 //Assign each stat to corresponding text
 function setStats(stat, index) {
-  if (localStorage.getItem(stat)) {
-    $(`#${stat}`).text(localStorage.getItem(`${stat}`));
+  storedStat = localStorage.getItem(stat)
+  if (storedStat) {
+    $(`#${stat}`).text(localStorage.getItem(stat));
   }
 }
 
