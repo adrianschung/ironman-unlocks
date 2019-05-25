@@ -48,9 +48,11 @@ function getStats(callback) {
 
 //Assign each stat to corresponding text
 function setStats(stat, index) {
-  storedStat = localStorage.getItem(stat)
+  var storedStat = localStorage.getItem(stat);
+  var statSelector = $(`#${stat}`);
   if (storedStat) {
-    $(`#${stat}`).text(localStorage.getItem(stat));
+    statSelector.text(localStorage.getItem(stat));
+    statSelector.prop('title', 'Exp: ' + localStorage.getItem(stat + 'XP'));
   }
 }
 
