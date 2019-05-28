@@ -70,8 +70,8 @@ function getStorage(item) {
 
 //Update current xp and goal level fields
 function updateInputs(skill) {
-  level = getStorage(skill) + 1;
-  xp = getStorage(skill+'XP');
+  getStorage(skill) ? level = getStorage(skill) + 1 : level = 2;
+  getStorage(skill+'XP') ? xp = getStorage(skill+'XP') : xp = 0;
   goalXP = getRemainingXP(xp, level);
   $('#current-xp').val(xp);
   $('#goal-lvl').val(level);
