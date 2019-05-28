@@ -110,9 +110,7 @@ $('#current-xp, #goal-lvl, input:checkbox').change(function() {
 
 $(function() {
   //Load xp from stats and calculate for next level
-  const initialGoalXP = getRemainingXP(currentXP, goalLvl);
-  currentXP ? $('#current-xp').val(currentXP) : $('#current-xp').val(0);
-  goalLvl ? $('#goal-lvl').val(goalLvl) : $('#goal-lvl').val(0);
+  updateInputs('prayer');
   var skill = '';
   var tabsWrapper = $('.tabs-wrapper');
   if( tabsWrapper.length > 0 ){
@@ -124,7 +122,7 @@ $(function() {
         me.parent().add( me.attr('href') ).addClass('active');
     });
   }
-  initialGoalXP ? xpText(initialGoalXP) : xpText(0);
+  const initialGoalXP = getRemainingXP($('#current-xp').val(), $('#goal-lvl').val());
   calcItems(initialGoalXP, 'prayer');
   $('#construction-tab').click(function() {
     updateInputs('construction');
