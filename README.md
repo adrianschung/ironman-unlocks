@@ -2,9 +2,7 @@
 
 Track your OSRS Ironman gear unlocks with this simple application here. <https://adrianschung.github.io/ironman-unlocks/>
 
-Just click on whatever item you grinded hours for to track your gear progress easily.
-
-Currently only Barrows and GWD items are listed but more are being added.
+Just click on whatever item you grinded hours for to track your gear progress easily. Or lookup your/anybody's current stats. Then check the calculators to see how much exp and how many items you need to reach your goals.
 
 ## Future items
 
@@ -13,7 +11,6 @@ Currently only Barrows and GWD items are listed but more are being added.
 - Slayer
 - Clue
 - Grotesque Guardians
-- Vorkath
 - Hydra
 - Wilderness bosses
 - Wintertodt
